@@ -1,25 +1,69 @@
-<div class="container">
-  <div class="panel pull-right">
-    <div class="panel-header">
-      Wallet
+<div class="jumbotron">
+  <div class="row">
+    <div class="">
+      <h1>QuickSnax</h1>
+      <p><i>"If we don't have it, you don't need it."</i></p>
     </div>
-    <div class="coin" id="quarter">
-      Quater
-    </div>
-    <div class="coin" id="nickel">
-      nickel
-    </div>
-    <div class="coin" id="dime">
-      Dime
-    </div>
-    <div class="coin" id="penny">
-      Penny
-    </div>
-    <div class="coin" id="Zwei-Euro">
-      Zwei Euro
-    </div>
-    <div class="coin" id="zwanzig">
-      Zwanzig Cent Euro
+    <div class="pull-right">
+      <p id="display">0.00</p>
     </div>
   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="panel panel-default col-md-6">
+      <div class="panel-body">
+        <div class="row center-block">
+          <div class="well btn-group items">
+            <%= image_tag "cola.jpg", class: "vending-item" %>
+            <button type="button" name="cola-btn" class="btn btn-default">Select Cola</button>
+          </div>
+          <div class="well btn-group items">
+            <%= image_tag "chips.png", class: "vending-item" %>
+            <button type="button" name="chips-btn" class="btn btn-default">Select Chips</button>
+          </div>
+          <div class="well btn-group items">
+            <%= image_tag "candy.jpg", class: "vending-item" %>
+            <button type="button" name="candy-btn" class="btn btn-default">Select Candy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default col-md-6">
+      <div class="panel-heading">
+        Wallet
+      </div>
+      <div class="panel-body wallet">
+        <div class="row center-block">
+          <div class="well btn-group coin">
+            <%= image_tag "quarter.png", id: "quarter" %>
+            <button type="button" name="quarter" class="btn btn-default">insert quarter</button>
+          </div>
+          <div class="well btn-group coin">
+            <%= image_tag "nickel.jpg", id: "nickel" %>
+            <button type="button" name="nickel" class="btn btn-default">insert nickel</button>
+          </div>
+          <div class="well btn-group coin">
+            <%= image_tag "dime.png", id: "dime" %>
+            <button type="button" name="dime" class="btn btn-default">insert dime</button>
+          </div>
+          <div class="well btn-group coin">
+            <%= image_tag "penny.jpg", id: "penny" %>
+            <button type="button" name="penny" class="btn btn-default">insert penny</button>
+          </div>
+          <div class="well btn-group coin">
+            <%= image_tag "zwei-euro.jpg", id: "zwei-euro" %>
+            <button type="button" name="zwei-euro" class="btn btn-default">insert zwei-euro</button>
+          </div>
+          <div class="well btn-group coin">
+            <%= image_tag "zwanzig-cent.jpg", id: "zwanzig" %>
+            <button type="button" name="zwanzig-cent" class="btn btn-default">insert zwanzig-cent</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </div>

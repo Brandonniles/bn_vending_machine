@@ -2,12 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.items {
+  width: 170px;
+}
+
 .coin {
-  border-radius: 100%;
-  length: auto;
+  width: 170px;
+  height: 150px;
+}
+
+.vending-item {
+  height: 130px;
 }
 
 #quarter {
-  height: 20px;
-  background-color: silver;
+  height: 70px;
+}
+
+#nickel {
+  height: 55px;
+}
+
+#dime {
+  height: 44px;
+}
+
+#penny {
+  height: 50px;
+}
+
+#zwei-euro {
+  height: 75px;
+}
+
+#zwanzig {
+  height: 65px;
+}
+
+#display {
+  font-size: 70px;
 }
